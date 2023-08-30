@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Авторизация</title>
+  <meta charset="utf-8">
+</head>
+<body>
+  <div class="main_div">
+    <form action="">
+        <b class="main_form_inn_elem main_label">Регистрация</b><br>
+        {{> input id="email" label="почта" class="main_form_inn_elem" }}
+        {{> input id="login" label="логин" class="main_form_inn_elem" }}
+        {{> input id="second_name" label="имя" class="main_form_inn_elem" }}
+        {{> input id="first_name" label="фамилия" class="main_form_inn_elem" }}
+        {{> input id="phone" label="телефон" class="main_form_inn_elem" }}
+        {{> input id="password" label="пароль" class="main_form_inn_elem" }}
+        {{> input id="password" label="подтверждение пароля" class="main_form_inn_elem" }}
+        {{> button label="Зарегистироваться" href="../../index.html" name="password" class="main_form_inn_elem"}}
+    </form>
+  </div>
+    <script type="module" src="./main.js"></script>
+</body>
+</html>
