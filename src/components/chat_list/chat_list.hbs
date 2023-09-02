@@ -1,0 +1,10 @@
+<div class="div_chat_list">
+    <div class="chat_panel">
+        {{> Reference label="Профиль>" class="ula" page="profile" }}
+    </div>
+    <ul>
+        {{#each (chats)}}
+            {{> ChatListElement}}
+        {{/each}}
+    </ul>
+</div>

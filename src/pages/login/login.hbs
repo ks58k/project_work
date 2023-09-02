@@ -1,0 +1,14 @@
+<div class="container">
+    <form>
+        <h2>Вход</h2>
+        {{> Input name="login" type="text" label="логин" id="login" }}
+        {{> Input name="password" type="password" label="пароль" id="password" }}
+        {{> Button label="Войти" page="chats" }}
+        {{> Button label="Зарегистрироваться" page="registration" }}
+    </form>
+</div>
+<div class="container">
+    <span>Временный div с ссылками на страницы 404 и 500</span>
+    {{> Button label="Страница 404" page="page404" }}
+    {{> Button label="Страница 500" page="page500" }}
+</div>
