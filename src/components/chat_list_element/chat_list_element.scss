@@ -5,3 +5,11 @@
 .chat_element_img {
     border-radius: 100%;
 }
+
+.chat_active {
+    background-color: grey;
+}
+
+.div_chat_element:hover {
+    background-color: bisque;
+}
