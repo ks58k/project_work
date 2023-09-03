@@ -3,7 +3,19 @@ import * as Components from './components';
 import * as Pages from './pages';
 
 
-const pages = {
+type PageArray = Array<typeof Pages.LoginPage | typeof Pages.RegistrationPage | typeof Pages.ChatsPage | typeof Pages.Page404 | typeof Pages.Page500 | typeof Pages.ProfilePage>;
+
+type Pages = {
+  [key: string]: PageArray;
+  login: PageArray;
+  registration: PageArray;
+  chats: PageArray;
+  page404: PageArray;
+  page500: PageArray;
+  profile: PageArray;
+}
+
+const pages: Pages = {
   'login': [ Pages.LoginPage ],
   'registration': [Pages.RegistrationPage],
   'chats': [Pages.ChatsPage],
@@ -25,7 +37,9 @@ function navigate(page: string) {
 document.addEventListener('DOMContentLoaded', () => navigate('login'));
 
 document.addEventListener('click', e => {
-  const page = e.target.getAttribute('page');
+   const target = e.target as HTMLElement;
+   const page = target.getAttribute('page');
+  //const page = e.target.getAttribute('page');
   if (page) {
     navigate(page);
     e.preventDefault();
