@@ -1,0 +1,20 @@
+<div class="div_lenta_list">
+    <div class="chat_panel">
+        <div class="ula">
+            <div class="ava_panel_img"> 
+                <div class="profile_img"></div>
+            </div>
+            <div class="panel_delete">
+                {{> Reference label="Удалить чат" page="" }}
+            </div>
+        </div>
+    </div>
+    <ul>
+        {{#each (messages)}}
+            {{> LentaElement }}
+        {{/each}}
+    </ul>
+    <div>
+        {{> Input name="message" id="message" label="сообщение:" type="text" }}
+    </div>
+</div>

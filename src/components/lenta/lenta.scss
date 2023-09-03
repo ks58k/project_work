@@ -1,0 +1,51 @@
+.div_lenta_list {
+    float: left;
+    width: 70%;
+
+    .ula {
+        text-align: right;
+        .panel_delete {
+            padding: 2%;
+        }
+    
+        a {
+        cursor: pointer;
+        color: blue;
+        margin-right: 13%;
+        }
+    }
+
+    .ava_panel_img {
+        float: left;
+        img {
+            border-radius: 100%;
+            text-align: left;
+        }
+    }
+
+    .div_input {
+        padding-left: 0;
+        padding-right: 0;
+    
+        label {
+        display: inline;
+        padding-left: 1%;
+        }
+
+        #message {
+            width: 92%;
+        }
+    }
+
+    .profile_img {
+        content: url("../../assets/01.jpg");
+        width: 50px;
+        height: 50px;
+        border-radius: 100%;
+        padding-top: 10px;
+        cursor: pointer;
+        display: inline;
+        float: none;
+      }
+}
+

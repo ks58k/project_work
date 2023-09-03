@@ -1,0 +1,11 @@
+$bg_main: #dce0e0;
+$bd_all: 1px solid #000;
+
+.container_404 {
+    width: 40%;
+    background: $bg_main; 
+    border: $bd_all; 
+    margin: 5% auto;
+    text-align: center;
+    font-size: 130%;
+   }

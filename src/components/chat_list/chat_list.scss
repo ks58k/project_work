@@ -1,0 +1,26 @@
+.div_chat_list {
+    float: left;
+    width: 20%;
+    border: black solid 1px;
+
+    .ula {
+        text-align: left;
+        padding: 7%;
+    
+        a {
+        cursor: pointer;
+        color: blue;
+        margin-right: 13%;
+        }
+    }
+
+
+}
+
+.div_lenta_list {
+    .chat_panel {
+        border-top: black solid 1px;
+        border-bottom: black solid 1px;
+        border-right: black solid 1px;
+    }
+}

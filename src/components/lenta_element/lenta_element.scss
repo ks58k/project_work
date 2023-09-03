@@ -1,0 +1,32 @@
+.div_lenta_element_send_from {
+    text-align: left;
+}
+
+.div_lenta_element_send_to {
+    text-align: right;
+}
+
+.div_lenta_element {
+    margin: 0 0 1% 0%;
+
+    .dateMessage {
+        display: block;
+        font-size: 70%;
+    }
+
+    .lenta_element_text {
+        border-radius: 5px;
+        padding: 3px;
+    }
+
+    .send_from {
+        background-color: lightblue;
+    }
+
+    .send_to {
+        background-color: grey;
+    }
+}
+
+
+

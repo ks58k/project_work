@@ -1,0 +1,13 @@
+<div class="div_chat_list">
+    <div class="chat_panel">
+        <div class="ula">
+            {{> Reference label="Новый чат" page="" }}
+            {{> Reference label="Профиль>" page="profile" }}
+        </div>
+    </div>
+    <ul>
+        {{#each (chats)}}
+            {{> ChatListElement}}
+        {{/each}}
+    </ul>
+</div>
