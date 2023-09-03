@@ -3,10 +3,11 @@ import * as Components from './components';
 import * as Pages from './pages';
 
 
-type PageArray = Array<typeof Pages.LoginPage | typeof Pages.RegistrationPage | typeof Pages.ChatsPage | typeof Pages.Page404 | typeof Pages.Page500 | typeof Pages.ProfilePage>;
+type PageArray = Array<typeof Pages.StartPage | typeof Pages.LoginPage | typeof Pages.RegistrationPage | typeof Pages.ChatsPage | typeof Pages.Page404 | typeof Pages.Page500 | typeof Pages.ProfilePage>;
 
 type Pages = {
   [key: string]: PageArray;
+  start: PageArray;
   login: PageArray;
   registration: PageArray;
   chats: PageArray;
@@ -16,6 +17,7 @@ type Pages = {
 }
 
 const pages: Pages = {
+  'start': [Pages.StartPage],
   'login': [ Pages.LoginPage ],
   'registration': [Pages.RegistrationPage],
   'chats': [Pages.ChatsPage],
@@ -34,7 +36,7 @@ function navigate(page: string) {
   container.innerHTML = Handlebars.compile(source)(context);
 }
 
-document.addEventListener('DOMContentLoaded', () => navigate('login'));
+document.addEventListener('DOMContentLoaded', () => navigate('start'));
 
 document.addEventListener('click', e => {
    const target = e.target as HTMLElement;
